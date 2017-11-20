@@ -5,29 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ee73518-0376-4a38-83e7-9b8b15cad9f6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editor.iml" afterPath="$PROJECT_DIR$/editor.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/ulco/Circle.java" afterPath="$PROJECT_DIR$/src/org/ulco/Circle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/ulco/Document.java" afterPath="$PROJECT_DIR$/src/org/ulco/Document.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/ulco/GraphicsObject.java" afterPath="$PROJECT_DIR$/src/org/ulco/GraphicsObject.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/ulco/GraphicsObjects.java" afterPath="$PROJECT_DIR$/src/org/ulco/GraphicsObjects.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/ulco/Group.java" afterPath="$PROJECT_DIR$/src/org/ulco/Group.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/ulco/ID.java" afterPath="$PROJECT_DIR$/src/org/ulco/ID.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/ulco/JSON.java" afterPath="$PROJECT_DIR$/src/org/ulco/JSON.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/ulco/Layer.java" afterPath="$PROJECT_DIR$/src/org/ulco/Layer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/ulco/Point.java" afterPath="$PROJECT_DIR$/src/org/ulco/Point.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/ulco/Rectangle.java" afterPath="$PROJECT_DIR$/src/org/ulco/Rectangle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/ulco/Square.java" afterPath="$PROJECT_DIR$/src/org/ulco/Square.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/CircleTest.java" afterPath="$PROJECT_DIR$/src/test/CircleTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/DocumentTest.java" afterPath="$PROJECT_DIR$/src/test/DocumentTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/GroupTest.java" afterPath="$PROJECT_DIR$/src/test/GroupTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/JSONTest.java" afterPath="$PROJECT_DIR$/src/test/JSONTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/LayerTest.java" afterPath="$PROJECT_DIR$/src/test/LayerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/RectangleTest.java" afterPath="$PROJECT_DIR$/src/test/RectangleTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/SquareTest.java" afterPath="$PROJECT_DIR$/src/test/SquareTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -76,7 +54,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Group.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Group.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/ulco/Group.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="437">
@@ -109,13 +87,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JSON.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="JSON.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/ulco/JSON.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="55">
+              <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
               <folding>
-                <element signature="e#632#633#0" expanded="true" />
+                <element signature="e#1042#1043#0" expanded="true" />
+                <element signature="e#1080#1081#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -174,6 +153,7 @@
         <option value="$PROJECT_DIR$/src/org/ulco/Document.java" />
         <option value="$PROJECT_DIR$/src/org/ulco/GraphicsObject.java" />
         <option value="$PROJECT_DIR$/src/org/ulco/Group.java" />
+        <option value="$PROJECT_DIR$/src/org/ulco/JSON.java" />
       </list>
     </option>
   </component>
@@ -748,20 +728,11 @@
       <updated>1510567023439</updated>
       <workItem from="1510567026767" duration="691000" />
       <workItem from="1510568012937" duration="2785000" />
-      <workItem from="1511165313211" duration="4499000" />
+      <workItem from="1511165313211" duration="6510000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unnamed - 2017.11.20 at 09h 36m 22s.xml">
-      <configuration name="Unnamed" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unnamed - 2017.11.20 at 09h 37m 58s.xml">
-      <configuration name="Unnamed" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unnamed - 2017.11.20 at 09h 38m 43s.xml">
-      <configuration name="Unnamed" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Unnamed - 2017.11.20 at 09h 39m 56s.xml">
       <configuration name="Unnamed" configurationId="JUnit" />
     </history-entry>
@@ -783,9 +754,18 @@
     <history-entry file="Unnamed - 2017.11.20 at 10h 23m 17s.xml">
       <configuration name="Unnamed" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Unnamed - 2017.11.20 at 10h 59m 37s.xml">
+      <configuration name="Unnamed" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unnamed - 2017.11.20 at 11h 03m 04s.xml">
+      <configuration name="Unnamed" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unnamed - 2017.11.20 at 11h 03m 30s.xml">
+      <configuration name="Unnamed" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7975000" />
+    <option name="totallyTimeSpent" value="9986000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="31" width="1922" height="1004" extended-state="6" />
@@ -886,7 +866,8 @@
         <state relative-caret-position="34">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding>
-            <element signature="e#632#633#0" expanded="true" />
+            <element signature="e#1042#1043#0" expanded="true" />
+            <element signature="e#1080#1081#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1071,14 +1052,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ulco/Rectangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/ulco/Square.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1119,16 +1092,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ulco/JSON.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#632#633#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/JSONTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
@@ -1145,6 +1108,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ulco/Group.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="192" column="62" lean-forward="false" selection-start-line="192" selection-start-column="62" selection-end-line="192" selection-end-column="62" />
+          <folding>
+            <element signature="e#764#765#0" expanded="true" />
+            <element signature="e#792#793#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/ulco/GraphicsObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1156,13 +1130,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/ulco/Group.java">
+    <entry file="file://$PROJECT_DIR$/src/org/ulco/Rectangle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="192" column="62" lean-forward="false" selection-start-line="192" selection-start-column="62" selection-end-line="192" selection-end-column="62" />
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/ulco/JSON.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
           <folding>
-            <element signature="e#764#765#0" expanded="true" />
-            <element signature="e#792#793#0" expanded="true" />
+            <element signature="e#1042#1043#0" expanded="true" />
+            <element signature="e#1080#1081#0" expanded="true" />
           </folding>
         </state>
       </provider>
