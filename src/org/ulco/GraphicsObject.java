@@ -11,6 +11,8 @@ abstract public class GraphicsObject {
         return m_ID;
     }
 
+    public int size() {return 1;}
+
     abstract boolean isClosed(Point pt, double distance);
 
     abstract void move(Point delta);
@@ -20,4 +22,7 @@ abstract public class GraphicsObject {
     abstract public String toString();
 
     private int m_ID;
+
+
+    public boolean isSimple() {return true;}
 }
