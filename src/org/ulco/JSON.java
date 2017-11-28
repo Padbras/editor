@@ -9,7 +9,7 @@ public class JSON {
         String type = str.substring(str.indexOf("type") + 5, str.indexOf(","));
         String newtype = type.substring(0,1).toUpperCase() + type.substring(1);
         String nomclasse = "org.ulco." + newtype;
-        
+
         try {
             o = (GraphicsObject) Class.forName(nomclasse).getConstructor(String.class).newInstance(str);
         } catch (InstantiationException e) {
