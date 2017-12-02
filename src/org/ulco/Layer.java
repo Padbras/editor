@@ -82,7 +82,7 @@ public class Layer {
     }
 
 
-    public String toJson() {
+   /* public String toJson() {
         String str = "{ type: layer, objects : { ";
 
         for (int i = 0; i < m_list.size(); ++i) {
@@ -94,7 +94,32 @@ public class Layer {
             }
         }
         return str + " } }";
-    }
+    }*/
+
+   // De ce que je comprend, il faut refaire le toJson pour introduire les groupes (reprendre la façon de faire de la question 1)
+   public String toJson() {
+       String str = "{ type: layer, objects : { ";
+
+       for (int i = 0; i < m_list.size(); ++i) {
+           GraphicsObject element = m_list.elementAt(i);
+           if (element.isSimple()) {
+               str += element.toJson();
+               if (i < m_list.size()  - 1) {
+                   str += ", ";
+               }
+           }
+
+       }
+       str += " }, groups : { ";
+
+       for (int i = 0; i < m_list.size(); ++i) {
+           GraphicsObject element2 = m_list.elementAt(i);
+           if (!element2.isSimple()) {
+               str += element2.toJson();
+           }
+       }
+       return str + " } }";
+   }
 
     private Vector<GraphicsObject> m_list;
     private int m_ID;
