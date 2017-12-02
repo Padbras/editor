@@ -5,13 +5,13 @@ import java.util.Vector;
 public class Group extends GraphicsObject {
 
     public Group() {
-        //   m_objectList = new  Vector<Group>();
+
         m_objectList = new Vector<GraphicsObject>();
         m_ID=ID.get_generator().get_id_number();
     }
 
     public Group(String json) {
-        // m_objectList = new  Vector<Group>();
+
         m_objectList = new Vector<GraphicsObject>();
         String str = json.replaceAll("\\s+", "");
         int objectsIndex = str.indexOf("objects");
@@ -127,7 +127,7 @@ public class Group extends GraphicsObject {
         return size;
     }
 
-    // refactor: passer les for de tString et tJson comme fonctions
+
     public String objectsLoop()
     {
         String str = "";
@@ -192,7 +192,6 @@ public class Group extends GraphicsObject {
         return str + "]]";
     }
 
-    //private Vector<Group> m_objectList;
     private Vector<GraphicsObject> m_objectList;
     private int m_ID;
 }

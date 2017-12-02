@@ -1,11 +1,11 @@
 package org.ulco;
 
-import java.util.Vector;
+
 
 public class FunctionToolbox {
-    // 2 fonctions select avant refactoring: une dans layers et une dans document
 
-    // Celle de layers
+
+
     public static GraphicsObjects select(Point pt, double distance, Layer layer) {
         GraphicsObjects list = new GraphicsObjects();
         for (GraphicsObject object : layer.getM_list()) {
@@ -16,7 +16,6 @@ public class FunctionToolbox {
         return list;
     }
 
-    // celle de document
     public static GraphicsObjects select(Point pt, double distance, Document doc) {
         GraphicsObjects list = new GraphicsObjects();
 
@@ -26,7 +25,6 @@ public class FunctionToolbox {
         return list;
     }
 
-    // refactor
     static void parseObjects(Group groupe, String objectsStr) {
         while (!objectsStr.isEmpty()) {
             int separatorIndex = FunctionToolbox.searchSeparator(objectsStr);
@@ -65,7 +63,7 @@ public class FunctionToolbox {
         }
     }
 
-    // refactor
+
     public static int searchSeparator(String str) {
         int index = 0;
         int level = 0;

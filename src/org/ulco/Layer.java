@@ -25,6 +25,10 @@ public class Layer {
         m_list.add(o);
     }
 
+    public void addGroup(Group g) {
+        m_list.add(g);
+    }
+
     public GraphicsObject get(int index) {
         return m_list.elementAt(index);
     }
@@ -45,22 +49,6 @@ public class Layer {
 
 
 
-
-   /* public String toJson() {
-        String str = "{ type: layer, objects : { ";
-
-        for (int i = 0; i < m_list.size(); ++i) {
-            GraphicsObject element = m_list.elementAt(i);
-
-            str += element.toJson();
-            if (i < m_list.size() - 1) {
-                str += ", ";
-            }
-        }
-        return str + " } }";
-    }*/
-
-   // De ce que je comprend, il faut refaire le toJson pour introduire les groupes (reprendre la façon de faire de la question 1)
    public String toJson() {
        String str = "{ type: layer, objects : { ";
 
