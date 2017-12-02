@@ -73,7 +73,8 @@ public class DocumentTest extends TestCase {
 
     @Test
     public void testConstructorGrid() throws Exception {
-        Document document = new Document(new Point(0,0), 3, 3, 5);
+        Document document = new Document();
+        DocumentCreation.DocumentGrid(document, new Point(0,0), 3, 3, 5);
 
         assertEquals(document.getObjectNumber(), 9);
         assertEquals(document.getLayerNumber(), 1);
@@ -81,6 +82,8 @@ public class DocumentTest extends TestCase {
 
     @Test
     public void testConstructorCircle() throws Exception {
-        assertEquals(new Document(new Point(0,0), 4, 3., 4.).getObjectNumber(), 4);
+        Document document = new Document();
+        DocumentCreation.DocumentCircles(document, new Point(0,0), 4, 3., 4.);
+        assertEquals(document.getObjectNumber(), 4);
     }
 }
