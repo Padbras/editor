@@ -1,0 +1,8 @@
+CONCERNANT LES QUESTIONS ET LEUR ORDRE
+
+Ayant eu du mal à comprendre la finalité de certaines questions (par exemple la question 3) j'ai fais les questions dans le désordre, privilégiant ce que je comprenais en priorité. 
+
+CONCERNANT LE REFACTORING:
+
+Je n'ai pas touché aux tests unitaires puisqu'il me semble que vous aviez dis que ce n'était pas la peine.
+J'ai également ignoré les refactoring sur certains points, notamment ceux qui concernent une ou deux lignes, surtout dans les constructeurs de classes n'ayant pas d'héritage commun. 

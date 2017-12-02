@@ -3,6 +3,7 @@ package org.ulco;
 abstract public class GraphicsObject {
     public GraphicsObject() {
         m_ID=ID.get_generator().get_id_number();
+
     }
 
     abstract public GraphicsObject copy();
@@ -20,6 +21,8 @@ abstract public class GraphicsObject {
     abstract public String toJson();
 
     abstract public String toString();
+
+
 
     private int m_ID;
 

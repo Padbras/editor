@@ -22,6 +22,10 @@ public class Group extends GraphicsObject {
         parseGroups(str.substring(groupsIndex + 8, endIndex - 1));
     }
 
+    private void parseObjects(String substring) {
+        FunctionToolbox.parseObjects(this, substring);
+    }
+
     @Override
     public boolean isSimple() {
         return false;
@@ -85,34 +89,11 @@ public class Group extends GraphicsObject {
 
     }
 
-    private int searchSeparator(String str) {
-        int index = 0;
-        int level = 0;
-        boolean found = false;
 
-        while (!found && index < str.length()) {
-            if (str.charAt(index) == '{') {
-                ++level;
-                ++index;
-            } else if (str.charAt(index) == '}') {
-                --level;
-                ++index;
-            } else if (str.charAt(index) == ',' && level == 0) {
-                found = true;
-            } else {
-                ++index;
-            }
-        }
-        if (found) {
-            return index;
-        } else {
-            return -1;
-        }
-    }
 
     private void parseGroups(String groupsStr) {
         while (!groupsStr.isEmpty()) {
-            int separatorIndex = searchSeparator(groupsStr);
+            int separatorIndex = FunctionToolbox.searchSeparator(groupsStr);
             String groupStr;
 
             if (separatorIndex == -1) {
@@ -129,24 +110,11 @@ public class Group extends GraphicsObject {
         }
     }
 
-    private void parseObjects(String objectsStr) {
-        while (!objectsStr.isEmpty()) {
-            int separatorIndex = searchSeparator(objectsStr);
-            String objectStr;
-
-            if (separatorIndex == -1) {
-                objectStr = objectsStr;
-            } else {
-                objectStr = objectsStr.substring(0, separatorIndex);
-            }
-            m_objectList.add(JSON.parse(objectStr));
-            if (separatorIndex == -1) {
-                objectsStr = "";
-            } else {
-                objectsStr = objectsStr.substring(separatorIndex + 1);
-            }
-        }
+    public  Vector<GraphicsObject> get_list()
+    {
+        return  m_objectList;
     }
+
 
     public int size() {
         int size = 0;
@@ -159,9 +127,10 @@ public class Group extends GraphicsObject {
         return size;
     }
 
-    public String toJson() {
-        String str = "{ type: group, objects : { ";
-
+    // refactor: passer les for de tString et tJson comme fonctions
+    public String objectsLoop()
+    {
+        String str = "";
         for (int i = 0; i < m_objectList.size(); ++i) {
             GraphicsObject element = m_objectList.elementAt(i);
             if (element.isSimple()) {
@@ -172,14 +141,29 @@ public class Group extends GraphicsObject {
             }
 
         }
-        str += " }, groups : { ";
+        return str;
+    }
 
+    public String JsongroupsLoop() {
+        String str = "";
         for (int i = 0; i < m_objectList.size(); ++i) {
             GraphicsObject element = m_objectList.elementAt(i);
             if (!element.isSimple()) {
                 str += element.toJson();
             }
         }
+            return str;
+    }
+
+    public String toJson() {
+        String str = "{ type: group, objects : { ";
+
+        str+= objectsLoop();
+
+        str += " }, groups : { ";
+
+        str += JsongroupsLoop();
+
         return str + " } }";
     }
 
